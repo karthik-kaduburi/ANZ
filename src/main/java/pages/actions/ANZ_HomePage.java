@@ -37,7 +37,8 @@ public class ANZ_HomePage {
 	String key, value;
 
 	/**
-	 * @param signIn Clicks On Button/link
+	 * @param link
+	 * Clicks On Button/link
 	 */
 	public void clickOnElement(String link) {
 		if (link.equalsIgnoreCase("workOut")) {
@@ -47,20 +48,10 @@ public class ANZ_HomePage {
 		}
 	}
 
-	/**
-	 * @param link move to element click on the button
-	 */
-	public void moveToElement(String link) {
-
-		js.executeScript("arguments[0].scrollIntoView(true);",
-				SeleniumDriver.getDriver().findElement(By.xpath("//*[@class='product-image-container']")));
-		Actions action = new Actions(SeleniumDriver.getDriver());
-		action.moveToElement(SeleniumDriver.getDriver().findElement(By.xpath("//*[@class='product-image-container']")))
-				.perform();
-	}
 
 	/**
-	 * @param map Enter the Personal Info Details
+	 * @param map 
+	 * Enter the Info Details
 	 */
 	public void enterDetails(Map<String, String> map) {
 		// TODO Auto-generated method stub
@@ -100,7 +91,8 @@ public class ANZ_HomePage {
 	}
 
 	/**
-	 * @param map Validate details on a page
+	 * @param map 
+	 * Validate details on a page
 	 */
 	public void validateDetails(Map<String, String> map) {
 		// TODO Auto-generated method stub

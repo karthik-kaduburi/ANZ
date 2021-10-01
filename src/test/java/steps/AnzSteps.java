@@ -43,10 +43,4 @@ public class AnzSteps {
 		anzActions.clickOnElement(link);
 	}
 
-	@And("^moved to \"([^\"]*)\" element$")
-	public void move_to_element(String link) {
-
-		anzActions.moveToElement(link);
-	}
-
 }
